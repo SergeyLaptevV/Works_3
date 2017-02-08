@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        @font-face {
+            font-family: 'Wisdom';
+            src: url('fonts/WisdomScriptAJ.ttf');
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .main {
+            margin: auto;
+            max-width: 1400px;
+            min-width: 600px;
+            width: 100%;
+
+
+
+        }
+        .baner {
+            max-width: 1400px;
+            width: 100%;
+            min-height: 700px;
+            height: 100%;
+            background-color: blue;
+            background-image: url("img/FonBaver.png");
+            background-size: cover;
+            position: relative;
+        }
+        .nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            max-width: 1400px;
+            width: 100%;
+            min-height: 700px;
+            height: 100%;
+            margin: auto;
+            padding:42px 200px 160px 240px;
+            color: #ffffff;
+        }
+        .golden {
+            font-family: Wisdom;
+            color: #e6be36;
+            font-size: 26px;
+        }
+        .menu {
+            padding-top: 8px;
+            color: #ffffff;
+            font-size: 14px;
+            text-transform: uppercase;
+            min-width: 100px;
+            text-align: center;
+        }
+        .welcome {
+            font-size: 40px;
+            text-align: center;
+            margin-top: 172px;
+        }
+        @media screen and (max-width: 1200px) {
+            .welcome {
+                font-size: 30px;
+                margin-top: 10px;
+            }
+            .niceT {
+                font-size: 25px;
+                margin-top: 0;
+            }
+        }
+
+        .nice {
+            font-size: 75px;
+            text-transform: uppercase;
+            text-align: center;
+            margin-top: 15px;
+        }
+        .btnMore{
+            text-align: center;
+            padding-top: 30px;
+        }
+        .more {
+            width: 240px;
+            height: 65px;
+            text-transform: uppercase;
+            color: white;
+            background-color: #fed136;
+            border-radius: 5px;
+            font-size: 24px;
+        }
+        .services{
+            max-width: 1400px;
+            min-height: 568px;
+            height: 100%;
+            text-align: center;
+            padding: 110px 0 0 0;
+        }
+        .nameServ {
+            text-transform: uppercase;
+            font-size: 40px;
+        }
+        .infoServ {
+            padding-top: 66px;
+            max-width: 940px;
+            width: 100%;
+            margin: auto;
+        }
+        .infoServ > div {
+            font-size: 18px;
+        }
+        .infoServ > p {
+            font-size: 18px;
+        }
+
+        .portfolio {
+            min-height: 1218px;
+            height: 100%;
+            background-color: #f7f7f7;
+        }
+        .namePortf {
+            text-align: center;
+            padding-top: 108px;
+        }
+        .namePortf > div {
+            text-transform: uppercase;
+            font-size: 40px;
+        }
+        .namePortf > p {
+            font-size: 16px;
+        }
+
+        .presentation{
+            max-width: 940px;
+            width: 100%;
+            margin: auto;
+            padding: 64px 0 0 0;
+            text-align: center;
+        }
+        .template {
+            padding-left: 0;
+        }
+        .template > div {
+            font-size: 18px;
+            text-align: center;
+            padding-top: 25px;
+        }
+        .template > p{
+            font-size: 14px;
+            text-align: center;
+        }
+        .aboutUs {
+            text-align: center;
+            padding:108px 0 63px 0;
+        }
+
+        .aboutUs > div {
+            text-transform: uppercase;
+            font-size: 40px;
+        }
+        .aboutUs > p {
+            font-size: 16px;
+        }
+        .news {
+            max-width: 1300px;
+            width: 100%;
+            margin: auto;
+
+
+        }
+        .newContentLeft {
+            text-align: right;
+
+        }
+        .newContentLeft > div {
+            font-size: 18px;
+            font-weight: bold;
+
+        }
+        .newContentLeft > p {
+            font-size: 16px;
+            line-height: 1.2;
+            color: #777777;
+            padding-left: 193px;
+        }
+        .newContentLeft > div > span {
+            text-transform: uppercase;
+        }
+        .newContentRight > div {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .newContentRight > p {
+            font-size: 16px;
+            line-height: 1.2;
+            color: #777777;
+            padding-right: 193px;
+        }
+        .newContentRight > div > span {
+            text-transform: uppercase;
+        }
+        .vertical {
+           text-align: center;
+            margin: auto;
+        }
+        @media screen and (max-width: 1200px) {
+            .vertical {
+                display: none;
+            }
+        }
+
+        .team {
+            max-width: 1400px;
+            min-height: 568px;
+            height: 100%;
+            text-align: center;
+            padding: 94px 0 120px 0;
+            background-color: #f9f9f9;
+        }
+        .nameTeam {
+            text-transform: uppercase;
+            font-size: 40px;
+        }
+        .infoTeam > p {
+            font-size: 16px;
+        }
+        .infoTeam {
+            padding-top: 66px;
+            max-width: 940px;
+            width: 100%;
+            margin: auto;
+        }
+        .infoTeam > div {
+            font-size: 16px;
+        }
+        .infoTeam > p {
+            font-size: 14px;
+        }
+        .icons {
+            margin: auto;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+
+            -webkit-flex-flow: row wrap;
+            justify-content: center;
+        }
+        .twiter {
+            background-image: url('img/Twitter.png');
+            float: left;
+            width: 51px;
+            height: 51px;
+        }
+        .twiter:hover {
+            background-image: url('img/Twitter2.png');
+        }
+        .facebook {
+            background-image: url('img/Facebook.png');
+            float: left;
+            width: 51px;
+            height: 51px;
+        }
+        .facebook:hover {
+            background-image: url('img/Facebook2.png');
+        }
+        .pinterest {
+            background-image: url('img/Pinterest.png');
+            float: left;
+            width: 51px;
+            height: 51px;
+        }
+        .pinterest:hover {
+            background-image: url('img/Pinterest2.png');
+        }
+        .gogle {
+            background-image: url('img/Google.png');
+            float: left;
+            width: 51px;
+            height: 51px;
+        }
+        .gogle:hover {
+            background-image: url('img/Google2.png');
+        }
+
+        .logos {
+            text-align: center;
+            padding:48px 0 60px 0;
+            margin: auto;
+            max-width: 1100px;
+            width: 100%;
+        }
+        .logos1 > img {
+            padding-left: 44px;
+        }
+        .contact {
+            max-width: 1400px;
+            width: 100%;
+            min-height: 672px;
+            height: 100%;
+            margin: auto;
+
+            background-image: url("img/MapImage.png");
+            background-size:contain;
+        }
+        .contactName {
+            padding: 98px 0 70px 0;
+            text-align: center;
+        }
+        .contactName > div {
+            font-size: 40px;
+            font-weight: bold;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+        .contactName > p {
+            font-size: 16px;
+            color: #777777;
+        }
+        .yName, .yMail, .ySubject {
+            min-width: 455px;
+            width: 100%;
+            height: 50px;
+            border-radius: 5px;
+            margin-bottom: 28px;
+            margin-right: 25px;
+            text-transform: uppercase;
+            text-indent: 25px;
+            color: #bbbbbb;
+            font-size: 14px;
+        }
+        .message {
+            margin: auto;
+            max-width: 940px;
+            width: 100%;
+            font-weight: bold;
+
+        }
+        .textT {
+            min-width: 458px;
+            padding-top: 15px;
+            width: 100%;
+            height: 208px;
+            border-radius: 5px;
+            margin-right: 25px;
+            text-transform: uppercase;
+            text-indent: 25px;
+            color: #bbbbbb;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .btnMess{
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 92px;
+        }
+        .mess {
+            width: 240px;
+            height: 65px;
+            text-transform: uppercase;
+            color: white;
+            background-color: #fed136;
+            border-radius: 5px;
+            font-size: 24px;
+        }
+
+        .footer {
+            max-width: 940px;
+            padding: 20px 0;
+            margin: auto;
+        }
+        .contFoot {
+            text-align: left;
+            padding-top: 20px;
+        }
+        .social {
+            padding-left: 60px;
+        }
+        @media screen and (max-width: 1200px) {
+            .social {
+                padding-left: 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="baner">
+            <div class="fon">
+            </div>
+            <div class="nav container-fluid">
+                <div class="row">
+                    <div class="golden col-lg-5">
+                        Golden
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="row">
+                            <div class="menu col-lg-2">
+                                home
+                            </div>
+                            <div class="menu col-lg-2">
+                                services
+                            </div>
+                            <div class="menu col-lg-2">
+                                portfolio
+                            </div>
+                            <div class="menu col-lg-2">
+                                about
+                            </div>
+                            <div class="menu col-lg-2">
+                                contact
+                            </div>
+                            <div class="menu col-lg-2">
+                                &nbsp;
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="welcome row">
+                    <div class="col-lg-12">
+                        Welcome To Our Studio!
+                    </div>
+                </div>
+                <div class="nice row">
+                    <div class="niceT col-lg-12">
+                        It’s nice to Meet you
+                    </div>
+                </div>
+                <div class="btnMore row">
+                    <div class="col-lg-12">
+                        <button class="more">
+                            Tell Me More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="services">
+           <div class="nameServ">
+                Services
+            </div>
+            <p>
+                Proin iaculis purus consequat sem cure.
+            </p>
+
+            <div class="infoServ row">
+                <div class="col-lg-4">
+                    <img src="img/grup1.png" alt="img">
+                    <div><b><br/>E-Commerce</b></div>
+                    <p>
+                        <br/>
+                        Proin iaculis purus consequat sem cure
+                        digni ssim. Donec porttitora entum suscipit
+                    </p>
+                </div>
+                <div class="test1 col-lg-4">
+                    <img src="img/grup2.png" alt="img">
+                    <div><b><br/>Responsive Web</b></div>
+                    <p>
+                        <br/>
+                        Proin iaculis purus consequat sem cure
+                        digni ssim. Donec porttitora entum suscipit
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="img/grup3.png" alt="img">
+                    <div><b><br/>Web Security</b></div>
+                    <p>
+                        <br/>
+                        Proin iaculis purus consequat sem cure
+                        digni ssim. Donec porttitora entum suscipit
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio">
+            <div class="row">
+                <div class="namePortf col-lg-12">
+                    <div>
+                        <b>
+                            Our portfolio
+                        </b>
+                    </div>
+                    <p>
+                        Proin iaculis purus consequat sem cure.
+                    </p>
+                </div>
+            </div>
+            <div class="presentation row">
+                <div class="template col-lg-4">
+                    <img src="img/Image1.png" alt="img" width="300px" height="299px">
+                    <div>
+                        <b>Ebony & Ivory</b>
+                    </div>
+                    <p>
+                        Branding
+                    </p>
+                </div>
+                <div class="template col-lg-4">
+                    <img src="img/Image2.png" alt="img" width="300px" height="299px">
+                    <div>
+                        <b>Smart Stationary</b>
+                    </div>
+                    <p>
+                        Print Design
+                    </p>
+                </div>
+                <div class="template col-lg-4">
+                    <img src="img/Image3.png" alt="img" width="300px" height="299px">
+                    <div>
+                        <b>Clever Poster</b>
+                    </div>
+                    <p>
+                        Print Design
+                    </p>
+                </div>
+            </div>
+            <div class="presentation row">
+                <div class="template col-lg-4">
+                    <img src="img/Image4.png" alt="img" width="300px" height="299px">
+                    <div>
+                        <b>Vinyl Record</b>
+                    </div>
+                    <p>
+                        Product Mock-Up
+                    </p>
+                </div>
+                <div class="template col-lg-4">
+                    <img src="img/Image5.png" alt="img" width="300px" height="299px">
+                    <div>
+                        <b>Treehouse Template</b>
+                    </div>
+                    <p>
+                        Web Design
+                    </p>
+                </div>
+                <div class="template col-lg-4">
+                    <img src="img/Image6.png" alt="img" width="300px" height="299px">
+                    <div>
+                        <b>Burned Logo</b>
+                    </div>
+                    <p>
+                        Branding
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="aboutUs col-lg-12">
+                <div>
+                    <b>
+                        About Us
+                    </b>
+                </div>
+                <p>
+                    Proin iaculis purus consequat sem cure.
+                </p>
+            </div>
+        </div>
+        <div class="news row">
+            <div class="newContentLeft col-lg-5">
+                <div>
+                    <span>July 2010</span>
+                    <br />
+                    <b>Our Humble Beginnings</b>
+                </div>
+                <p>
+                    Proin iaculis purus consequat sem cure
+                    digni ssim. Donec porttitora entum suscipit
+                    aenean rhoncus posuere odio in tincidunt. Proin
+                    iaculis purus consequat sem cure digni
+                    ssim. Donec porttitora entum suscipit.
+                </p>
+            </div>
+            <div class="col-lg-7">
+                <img src="img/Image7.png" alt="img" width="190px" height="190px">
+            </div>
+        </div>
+        <div class="row">
+            <div class="vertical col-lg-12">
+                <div>
+                    <img src="img/VerticalLine.png" alt="img">
+                </div>
+            </div>
+        </div>
+        <div class="news row">
+            <div class="col-lg-7" style="text-align: right">
+                <img src="img/Image8.png" alt="img" width="190px" height="190px">
+            </div>
+            <div class="newContentRight col-lg-5">
+                <div>
+                    <span>January 2011</span>
+                    <br />
+                    <b>Facing Startup Battles</b>
+                </div>
+                <p>
+                    Proin iaculis purus consequat sem cure
+                    digni ssim. Donec porttitora entum suscipit
+                    aenean rhoncus posuere odio in tincidunt. Proin
+                    iaculis purus consequat sem cure digni
+                    ssim. Donec porttitora entum suscipit aenean
+                    rhoncus posuere odio in tincidunt.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="vertical col-lg-12">
+                <div>
+                    <img src="img/VerticalLine.png" alt="img">
+                </div>
+            </div>
+        </div>
+        <div class="news row">
+            <div class="newContentLeft col-lg-5">
+                <div>
+                    <span>December 2012</span>
+                    <br />
+                    <b>Enter The Dark Days</b>
+                </div>
+                <p>
+                    Proin iaculis purus consequat sem cure
+                    digni ssim. Donec porttitora entum suscipit
+                    aenean rhoncus posuere odio in tincidunt. Proin
+                    iaculis purus consequat sem cure digni
+                </p>
+            </div>
+            <div class="col-lg-7">
+                <img src="img/Image9.png" alt="img" width="190px" height="190px">
+            </div>
+        </div>
+        <div class="row">
+            <div class="vertical col-lg-12">
+                <div>
+                    <img src="img/VerticalLine.png" alt="img">
+                </div>
+            </div>
+        </div>
+        <div class="news row">
+            <div class="col-lg-7" style="text-align: right">
+                <img src="img/Image10.png" alt="img" width="190px" height="190px">
+            </div>
+            <div class="newContentRight col-lg-5">
+                <div>
+                    <span>february 2014</span>
+                    <br />
+                    <b>Our Triumph</b>
+                </div>
+                <p>
+                    Proin iaculis purus consequat sem cure
+                    digni ssim. Donec porttitora entum suscipit
+                    aenean rhoncus posuere odio in tincidunt. Proin
+                    iaculis purus consequat sem cure digni
+                    ssim. Donec porttitora entum suscipit aenean.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="vertical col-lg-12">
+                <div>
+                    <img src="img/VerticalLine.png" alt="img">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12"  style="text-align:center; padding-bottom: 94px" width="190px" height="190px">
+                <img src="img/Story.png" alt="img">
+            </div>
+        </div>
+        <div class="team">
+            <div class="nameTeam">
+                our amazing team
+            </div>
+            <p>
+                Proin iaculis purus consequat sem cure
+            </p>
+            <div class="infoTeam row">
+                <div class="col-lg-4">
+                    <img src="img/Container.png" alt="img">
+                    <div><b><br/>Kimberly Thompson</b></div>
+                    <p>
+                        Marketer
+                    </p>
+                    <div class="icons">
+                        <div class="twiter">
+                        </div>
+                        <div class="facebook">
+                        </div>
+                        <div class="pinterest">
+                        </div>
+                    </div>
+                </div>
+                <div class="test1 col-lg-4">
+                    <img src="img/Container.png" alt="img">
+                    <div><b><br/>Rico Massimo</b></div>
+                    <p>
+                        Coder
+                    </p>
+                    <div class="icons">
+                        <div class="twiter">
+                        </div>
+                        <div class="facebook">
+                        </div>
+                        <div class="gogle">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <img src="img/Container.png" alt="img">
+                    <div><b><br/>Uku Mason</b></div>
+                    <p>
+                        Graphic Designer
+                    </p>
+                    <div class="icons">
+                        <div class="facebook">
+                        </div>
+                        <div class="pinterest">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row"  style="width: 500px;margin: auto">
+                <div class="col-lg-12">
+                    <br/><br/>
+                    Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit
+                    aenean rhoncus posuere odio in tincidunt proin iaculis.
+                </div>
+            </div>
+
+        </div>
+        <div class="logos row">
+            <div class="logos1 col-lg-12">
+                <img src="img/Envato.png" alt="img">
+                <img src="img/WordPress.png" alt="img">
+                <img src="img/Tuts.png" alt="img">
+                <img src="img/Microlancer.png" alt="img">
+            </div>
+        </div>
+        <div class="contact">
+            <div class="row">
+                <div class="contactName col-lg-12">
+                    <div>
+                        Contact us
+                    </div>
+                    <p>
+                        Proin iaculis purus consequat sem cure.
+                    </p>
+                </div>
+            </div>
+            <div class="message row">
+                <div class="col-lg-6">
+                    <input type="text" class="yName" placeholder="your Name *"><br />
+                    <input type="text" class="yMail" placeholder="your e-mail *"><br />
+                    <input type="text" class="ySubject" placeholder="subject"><br />
+                </div>
+                <div class="col-lg-6">
+                    <textarea class="textT" placeholder="Your message *"></textarea>
+                </div>
+            </div>
+            <div class="btnMess row">
+                <div class="col-lg-12">
+                    <button class="mess">
+                        Send Message
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="footer row">
+            <div class="contFoot col-lg-4">
+                © Copyright 2014 FreebiesXpress.com
+            </div>
+            <div class="social col-lg-8">
+                <div class="twiter">
+                </div>
+                <div class="facebook">
+                </div>
+                <div class="pinterest">
+                </div>
+                <div class="gogle">
+                </div>
+            </div>
+        </div>
+        <br/><br/><br/><br/><br/>
+    </div>
+</body>
+</html>

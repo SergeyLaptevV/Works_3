@@ -1,0 +1,261 @@
+body {
+    background-color: #f1f5f8;
+}
+.main {
+    margin: auto;
+    width: 100%;
+    max-width: 1920px;
+
+}
+nav {
+    margin: auto;
+    width: 100%;
+    max-width: 1230px;
+    background-color: #ffffff;
+}
+.navbar-default {
+    background-color: #ffffff;
+}
+.logo {
+    min-width: 290px;
+    height: 80px;
+    background-color: #d6dded;
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+    text-align: center;
+}
+#webinar {
+    height: 80px;
+    border-right: 3px solid #f7fbfe;
+    text-align: center;
+    line-height: 50px;
+    color: #000000;
+}
+#help {
+    height: 80px;
+    border-right: 3px solid #f7fbfe;
+    text-align: center;
+    line-height: 50px;
+    color: #000000;
+}
+#contact {
+    height: 80px;
+    border-right: 3px solid #f7fbfe;
+    text-align: center;
+    line-height: 50px;
+    color: #000000;
+
+}
+#fotoName {
+    height: 80px;
+    text-align: center;
+    line-height: 50px;
+}
+#sname {
+    height: 80px;
+    color: #3774a3;
+    font-weight: bold;
+    text-align: center;
+
+
+}
+#goOut {
+    height: 80px;
+    background-color: #d6dded;
+    color: #9ba8bb;
+    text-align: center;
+}
+.glyphicon-log-out {
+    font-size: 18px;
+}
+
+section{
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+}
+.navLocat {
+    padding-left: 0;
+}
+.locations {
+    height: 50px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #fafcfd;
+}
+.locations a {
+    color: #c1cdde;
+    line-height: 55px;
+}
+.joinWeb {
+    background-color: #ffffff;
+}
+.path {
+    background-color: #f1f5f8;
+
+}
+.path a {
+    font-size: 18px;
+    color: #c1cdde;
+    line-height: 55px;
+}
+.corectNav {
+    padding-left: 0;
+}
+.nav-tabs li a {
+    height: 55px;
+    line-height: 30px;
+    color: #000000;
+}
+.nav-tabs li span {
+    font-size: 16px;
+    color: #c5cedb;
+}
+.question {
+    background-color: #a9b6c9;
+}
+.container  {
+    padding-top: 20px;
+}
+.parAttention {
+    color:#81aacb;
+    font-weight: bold;
+}
+.nameWeb {
+    width: 100%;
+    height: 35px;
+    border: 2px solid #fe4949;
+    background-color: #f1f5f8;
+}
+.commentWeb {
+    background-color: #fe4949;
+    color: #ffffff;
+    width: 280px;
+    text-align: center;
+    position: relative;
+    top: -10px;
+    right: -165px;
+}
+.imgFl {
+    padding-top: 75px;
+    width: 100%;
+    border: 2px dashed #f2f2f2;
+    height: 270px;
+    text-align: center;
+}
+.imgFl button {
+    margin-bottom: 30px;
+    width: 140px;
+    background-color: #ffffff;
+    color: #6b9ec4;
+    font-weight: bold;
+    border-radius: 25px;
+    border: 2px solid #6b9ec4;
+}
+.heiMb {
+    margin: auto;
+    width: 390px;
+    height: 40px;
+    background-color: #fe4949;
+    color: #ffffff;
+}
+.price {
+    background-color: #f4f5f7;
+    margin:0 30px 0 30px;
+    text-align: left;
+}
+.enterPrice {
+    background-color: #f4f5f7;
+}
+.form-control {
+    background-color: #f1f5f8;
+}
+.glyphicon-info-sign {
+    color: #c3cfde;
+}
+.glyphicon-calendar {
+    color: #a9b6c8;
+}
+.namePass {
+    background-color: #fe4949;
+    color: #ffffff;
+    width: 280px;
+    text-align: center;
+    position: relative;
+    top: -10px;
+    right: -60px;
+}
+.edit button {
+    width: 160px;
+    background-color: #ffffff;
+    color: #6b9ec4;
+    font-weight: bold;
+    border-radius: 25px;
+    border: 2px solid #6b9ec4;
+}
+.qualityTranslation {
+    margin-top: 30px;
+}
+.download {
+    margin-top: 30px;
+}
+.download button {
+    background-color: #17ccc5;
+    color: #ffffff;
+    border-radius: 25px;
+}
+.create{
+    padding-bottom: 20px;
+    text-align: right;
+}
+.create button{
+    width: 140px;
+    border-radius: 25px;
+    background-color: #216da7;
+    color: #ffffff;
+    font-weight: bold;
+}
+footer {
+    margin-top: 20px;
+    padding-top: 20px;
+    width: 100%;
+    min-height: 60px;
+    background-color: #203756;
+    color: #6f7a8b;
+
+}
+.targetbrain {
+    text-align: center;
+}
+.requisites {
+    margin: auto;
+    width: 100%;
+    max-width: 1130px;
+}
+.autors {
+    text-align: center;
+}
+.autors a{
+    color: #ffffff;
+    text-decoration: underline;
+}
+.networks {
+    text-align: center;
+}
+
+@media (max-width: 768px){
+    .navbar-right {
+        float: right!important;
+    }
+    .edit {
+        text-align: center;
+        padding-top: 10px;
+    }
+    .download {
+        text-align: center;
+    }
+    .create{
+        text-align: center;
+    }
+}
